@@ -17,3 +17,4 @@ Tasks:
 - [[web/rce] guestbook](./guestbook/README.md)
 - [[web/crypto] xxxshop](./xxxshop/README.md)
 - [[web/rce] b121](./b121/README.md)
+- [[web/rce] notes](./notes/README.md)  
