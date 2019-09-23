@@ -2,7 +2,6 @@
 
 Tasks:
 - [[web] GDPR](./gdpr/README.md)
-- [[web] xxxshop](./xxxshop/README.md)
 - [[web] blog](./blog/README.md)
 - [[sql] dump](./dump/README.md)
 - [[web] files](./files/README.md)
@@ -10,3 +9,5 @@ Tasks:
 - [[web/crypt] lol](./lol/README.md)
 - [[sql] counter](./counter/README.md)
 - [[rce] validator](./validator/README.md)
+- [[web/reverse] otp](./otp/README.md)
+- [[web] blog](./blog/README.md)
