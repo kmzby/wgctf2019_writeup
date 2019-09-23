@@ -12,3 +12,4 @@ Tasks:
 - [[web/reverse] otp](./otp/README.md)
 - [[web] blog](./blog/README.md)
 - [[reverse] secret (java)](./java_chat/README.md)
+- [[mysql] monitoring](./monitoring/README.md)
