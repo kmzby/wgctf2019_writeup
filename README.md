@@ -17,5 +17,5 @@ Tasks:
 - [[web/rce] guestbook](./guestbook/README.md)
 - [[web/crypto] xxxshop](./xxxshop/README.md)
 - [[web/rce] b121](./b121/README.md)
-- [[web/xss] notes](./notes/README.md)  tetris
+- [[web/xss] notes](./notes/README.md) 
 - [[web/js] tetris](./tetris/README.md)
