@@ -19,4 +19,4 @@ Tasks:
 - [[web/rce] b121](./b121/README.md)
 - [[web/xss] notes](./notes/README.md) 
 - [[web/js] tetris](./tetris/README.md) 
-- [[web/vault] tetris](./vault/README.md)
+- [[web/xss] vault](./vault/README.md)
