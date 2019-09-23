@@ -3,3 +3,4 @@
 Tasks:
 - [[web] GDPR](./gdpr/README.md)
 - [[web] xxxshop](./xxxshop/README.md)
+- [[web]] blog(./blog/README.md)
