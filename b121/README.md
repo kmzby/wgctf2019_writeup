@@ -1,5 +1,5 @@
 1. Смотрим, какие проверки делает сайт и направляем его на наш сервер http://b121.ctf2019.rocks/integration/89.163.129.121:9999. 
-Смотрим, что он отправляет  {"key": "test_key", "value": "test_value"} и проверяет value. Запускаем  
+Видим, что он отправляет  {"key": "test_key", "value": "test_value"} и проверяет value. Запускаем  
 ```
 value while true; do echo -e "HTTP/1.1 200 OK\n\n  test_value" | nc -l -v -p 9999 -q 1;done
 ```
