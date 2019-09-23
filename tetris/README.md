@@ -10,7 +10,7 @@ var b2 = '/addresult?email=' + encodeURI(b1) + b('0x21') + encodeURI(b0) + '&sco
 ```
 b2 подставляем в http://easygame.ctf2019.rocks/addresult? и получаем флаг
 
-3. Находим дополнительный флаг в 
+3. Находим дополнительный флаг  в game.js
 ```
 function be() {
     var bf = 'T';
