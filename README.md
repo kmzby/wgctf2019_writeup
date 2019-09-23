@@ -8,5 +8,5 @@ Tasks:
 - [[web] files](./files/README.md)
 - [[crypt] simple numbers](./fsimple_numbers/README.md)
 - [[web/crypt] lol](./lol/README.md)
-- [[sql] counter](./files/README.md)
-- [[rce] validator](./files/README.md)
+- [[sql] counter](./counter/README.md)
+- [[rce] validator](./validator/README.md)
