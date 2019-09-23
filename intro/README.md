@@ -1,6 +1,7 @@
 1. 25 кадр в промо ролике
 2. В pdf с регламентом (были удивлены)
-3. ```bash
+3. 
+```shell
 $ dig any ctf2019.rocks
 
 ; <<>> DiG 9.10.6 <<>> any ctf2019.rocks
@@ -80,7 +81,8 @@ flag.ctf2019.rocks.	300	IN	TXT	"WGCTF{A2EA873AA5C0F949D0666DA1252E2F62}"
 ;; WHEN: Mon Sep 23 16:35:59 +03 2019
 ;; MSG SIZE  rcvd: 116
 ```
-4. ```bash
+4. 
+```shell
 $ nc getflag.ctf2019.rocks 1337
 GETFLAG
 WGCTF{2B3F2CFBBB5991A5F06D0DEF711C422A}
