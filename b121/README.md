@@ -1,6 +1,8 @@
 1. Смотрим, какие проверки делает сайт и направляем его на наш сервер http://b121.ctf2019.rocks/integration/89.163.129.121. 
 Смотрим, что он отправляет  {"key": "test_key", "value": "test_value"} и проверяет value. Запускаем  
+```
 value while true; do echo -e "HTTP/1.1 200 OK\n\n  test_value" | nc -l -v -p 9999 -q 1;done
+```
 на 89.163.129.121 и получаем 1-й флаг.
 
 2. Видим, что запросы через http://b121.ctf2019.rocks/integration/ на закрытый порт падают с ошибкой из библиотеки urllib3 
