@@ -21,3 +21,5 @@ Tasks:
 - [[web/js] tetris](./tetris/README.md) 
 - [[web/xss] vault](./vault/README.md)
 - [[web/rce] tracking](./tracking/README.md)
+- [[reverse] filter](./clojure/README.md)
+- [[web] stoprobots](./stoprobots/README.md)
